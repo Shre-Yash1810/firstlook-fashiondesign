@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore luxury custom fashion by First Look Fashion Designer. View elegant blouses, dresses, gonde, and pico designs crafted to perfection.">
+  <title>First Look Fashion Designer | Luxury Boutique</title>
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 1. Luxury Preloader -->
+  <div id="preloader">
+    <div class="preloader-logo-container">
+      <img src="assets/images/logo.png" alt="First Look Logo" class="preloader-logo">
+      <div class="preloader-spinner"></div>
+    </div>
+    <div class="preloader-text">First Look</div>
+  </div>
+
+  <!-- 2. Navigation Bar -->
+  <header id="header">
+    <div class="navbar">
+      <a href="#home" class="nav-brand">
+        <img src="assets/images/logo.png" alt="First Look Logo" class="nav-logo">
+        <span class="brand-text">First Look</span>
+      </a>
+      
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="#home">Home</a></li>
+        <li class="nav-item"><a href="#blouses">Blouses</a></li>
+        <li class="nav-item"><a href="#dresses">Dresses</a></li>
+        <li class="nav-item"><a href="#gonde">Gonde</a></li>
+        <li class="nav-item"><a href="#fallpico">Fall Pico</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- 3. Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-content reveal">
+        <span class="hero-subtitle">Elegant Designs Crafted with Perfection</span>
+        <h1 class="hero-title">First Look<br>Fashion Designer</h1>
+        <p class="hero-desc">
+          Step into a world of exquisite craftsmanship, tailored garments, and luxury fashion. We specialize in designing bespoke blouses, dresses, gonde, and pico finishes that highlight your uniqueness and elevate every look.
+        </p>
+        <div class="hero-btns">
+          <a href="#blouses" class="btn btn-primary">View Collection</a>
+          <a href="#contact" class="btn btn-secondary">Contact Us</a>
+        </div>
+      </div>
+      <div class="hero-logo-wrapper reveal reveal-scale">
+        <div class="hero-logo-frame">
+          <img src="assets/images/logo.png" alt="First Look Brand Logo" class="hero-logo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Collections Section (Unified Tabbed View) -->
+  <section id="collections" class="section">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Exquisite Handcraft</span>
+        <h2 class="section-title">Our Collections</h2>
+      </div>
+
+      <!-- Luxury Tab Toggles -->
+      <div class="collections-tab-container reveal">
+        <button class="tab-btn active" data-tab="blouses">Blouses</button>
+        <button class="tab-btn" data-tab="dresses">Dresses</button>
+        <button class="tab-btn" data-tab="gonde">Gonde</button>
+      </div>
+
+      <!-- Gallery Grid Area -->
+      <div class="gallery-wrapper reveal">
+        <!-- Grid for Blouses, Dresses, Gonde -->
+        <div class="gallery-grid active" id="gallery-grid">
+          <div class="gallery-empty">Adorning our virtual shelves...</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Fall Pico Section (Permanently Visible Feature Showcase) -->
+  <section id="fallpico" class="fallpico-section section">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Signature Finishes</span>
+        <h2 class="section-title">Fall Pico</h2>
+      </div>
+      
+      <div class="fallpico-banner reveal reveal-scale" id="fallpico-banner-container">
+        <div class="fallpico-img-side">
+          <img src="assets/images/logo.png" alt="Fall Pico Cover" class="fallpico-img" id="fallpico-img" loading="lazy">
+        </div>
+        <div class="fallpico-content-side">
+          <span class="fallpico-tag">Expert Finishing</span>
+          <h3 class="fallpico-title" id="fallpico-title-text">Fall & Pico</h3>
+          <p class="fallpico-desc" id="fallpico-desc-text">
+            Give your sarees and luxury drapes the perfect borders. Our expert fall-stitching and pico detailing ensure your garments hang gracefully and remain pristine for years.
+          </p>
+          <a href="#contact" class="btn btn-primary">Book Consultation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Connect With Us</span>
+        <h2 class="section-title">Get in Touch</h2>
+      </div>
+      
+      <div class="contact-card-container reveal reveal-scale">
+        <div class="contact-card">
+          <div class="contact-info-side">
+            <h3 class="contact-title">Visit the Boutique</h3>
+            <span class="owner-title" id="contact-owner">By First Look Fashion Designer</span>
+            
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span><strong>Address:</strong><br><span id="contact-address">First Look Boutique, luxury lane block 4, Bangalore, India</span></span>
+              </div>
+              
+              <div class="contact-detail-item">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                <span><strong>Call Us:</strong><br><span id="contact-phone">+91 98765 43210</span></span>
+              </div>
+              
+              <div class="contact-detail-item">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                </svg>
+                <span><strong>WhatsApp:</strong><br><span id="contact-whatsapp">+91 98765 43210</span></span>
+              </div>
+            </div>
+            
+            <div class="contact-actions">
+              <a href="tel:+919876543210" id="contact-phone-btn" class="btn btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="display:inline-block; vertical-align:middle; width: 18px; margin-right: 6px;">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                Call Now
+              </a>
+              <a href="https://wa.me/919876543210" id="contact-whatsapp-btn" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="display:inline-block; vertical-align:middle; width: 18px; margin-right: 6px;">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                </svg>
+                WhatsApp Us
+              </a>
+            </div>
+          </div>
+          
+          <div class="contact-hours-side">
+            <h3 class="hours-title">Opening Hours</h3>
+            <ul class="hours-list">
+              <li class="hours-item active">
+                <span>Monday - Saturday</span>
+                <span id="hours-monsat">10:00 AM - 8:00 PM</span>
+              </li>
+              <li class="hours-item">
+                <span>Sunday</span>
+                <span id="hours-sun">Closed</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col-brand">
+        <div class="footer-logo-brand">
+          <img src="assets/images/logo.png" alt="First Look Logo" class="footer-logo">
+          <span class="footer-brand-title">First Look</span>
+        </div>
+        <p class="footer-desc">
+          Crafting fine ethnic and contemporary styles. Redefining elegance with custom fits, fine tailoring, and premium styling finishes since 2018.
+        </p>
+      </div>
+      
+      <div class="footer-col-links">
+        <h3 class="footer-title">Collections</h3>
+        <ul class="footer-menu">
+          <li><a href="#blouses" class="footer-menu-link">Blouses</a></li>
+          <li><a href="#dresses" class="footer-menu-link">Dresses</a></li>
+          <li><a href="#gonde" class="footer-menu-link">Gonde</a></li>
+          <li><a href="#fallpico" class="footer-menu-link">Fall Pico</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col-contact">
+        <h3 class="footer-title">Boutique</h3>
+        <p class="footer-contact-text" id="footer-address">First Look Boutique, Bangalore, India</p>
+        <p class="footer-contact-text" id="footer-phone">Phone: +91 98765 43210</p>
+        <p class="footer-contact-text" id="footer-whatsapp">WhatsApp: +91 98765 43210</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 First Look Fashion Designer. All Rights Reserved.</p>
+      <a href="login.html" class="admin-link">Admin Portal</a>
+    </div>
+  </footer>
+
+  <!-- 10. Fullscreen Image Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-btn lightbox-close" id="lightbox-close-btn" aria-label="Close Lightbox">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+    
+    <button class="lightbox-btn lightbox-prev" id="lightbox-prev-btn" aria-label="Previous Image">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+    
+    <div class="lightbox-content">
+      <img src="" alt="Fullscreen image viewer" class="lightbox-img" id="lightbox-img">
+    </div>
+    
+    <button class="lightbox-btn lightbox-next" id="lightbox-next-btn" aria-label="Next Image">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+    
+    <div class="lightbox-hint">Use ← / → keys or swipe to navigate</div>
+  </div>
+
+  <!-- Dynamic Controller -->
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | First Look Fashion Designer</title>
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+  <!-- Admin Panel Container -->
+  <div class="admin-container">
+    
+    <!-- 1. Left Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <img src="assets/images/logo.png" alt="First Look Logo" class="sidebar-logo">
+        <span class="sidebar-title">First Look</span>
+      </div>
+      
+      <nav class="sidebar-menu">
+        <div class="sidebar-item active" data-target="dashboard">
+          <button class="sidebar-link">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2H6a2 2 0 01-2-2v-4zM14 16a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 01-2-2v-4z" />
+            </svg>
+            <span>Dashboard</span>
+          </button>
+        </div>
+        
+        <div class="sidebar-item" data-target="blouses">
+          <button class="sidebar-link">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            <span>Blouses</span>
+          </button>
+        </div>
+        
+        <div class="sidebar-item" data-target="dresses">
+          <button class="sidebar-link">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            <span>Dresses</span>
+          </button>
+        </div>
+        
+        <div class="sidebar-item" data-target="gonde">
+          <button class="sidebar-link">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            <span>Gonde</span>
+          </button>
+        </div>
+        
+        <div class="sidebar-item" data-target="fallpico">
+          <button class="sidebar-link">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            <span>Fall Pico</span>
+          </button>
+        </div>
+
+        <div class="sidebar-item" data-target="contact">
+          <button class="sidebar-link">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            <span>Boutique Info</span>
+          </button>
+        </div>
+      </nav>
+      
+      <div class="sidebar-logout">
+        <button class="sidebar-link" id="btn-logout">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 01-3-3h4a3 3 0 013 3v1" />
+          </svg>
+          <span>Logout</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- 2. Main Content Display Area -->
+    <main class="main-content">
+      <header class="admin-header">
+        <h1 class="admin-title" id="page-title">Dashboard Overview</h1>
+        <div class="admin-user">Logged in as: <strong id="admin-user-email">...</strong></div>
+      </header>
+
+      <!-- Panel: Dashboard Overview -->
+      <section class="manager-panel active" id="dashboard-panel">
+        <div class="dashboard-panel">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-value" id="count-blouses">0</span>
+              <span class="stat-label">Blouses</span>
+            </div>
+          </div>
+          
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-value" id="count-dresses">0</span>
+              <span class="stat-label">Dresses</span>
+            </div>
+          </div>
+          
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-value" id="count-gonde">0</span>
+              <span class="stat-label">Gonde</span>
+            </div>
+          </div>
+          
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-value" id="status-fallpico">Empty</span>
+              <span class="stat-label">Fall Pico</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Panel: Manage Blouses -->
+      <section class="manager-panel" id="blouses-panel">
+        <!-- Upload Form -->
+        <div class="manager-section">
+          <h2 class="manager-title">Upload New Blouse Design</h2>
+          <div class="upload-wrapper">
+            <div class="upload-dropzone" id="dropzone-blouses">
+              <svg xmlns="http://www.w3.org/2000/svg" class="upload-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+              </svg>
+              <div class="upload-text">Drag and drop your design image here</div>
+              <div class="upload-subtext">Supports PNG, JPG, JPEG, WEBP</div>
+              <input type="file" id="file-blouses" class="file-input" accept="image/*">
+              <button class="btn-browse" type="button" onclick="document.getElementById('file-blouses').click()">Browse Files</button>
+            </div>
+            <div class="preview-container">
+              <div class="preview-box" id="preview-box-blouses">
+                <span class="preview-placeholder">Image Preview</span>
+                <img src="" alt="Blouse Design Preview" class="preview-img" id="preview-img-blouses">
+              </div>
+              <div class="upload-progress-container" id="progress-container-blouses">
+                <div class="progress-label">
+                  <span>Uploading Image...</span>
+                  <span id="progress-text-blouses">0%</span>
+                </div>
+                <div class="progress-bar-outer">
+                  <div class="progress-bar-inner" id="progress-bar-blouses"></div>
+                </div>
+              </div>
+              <button class="btn-upload" id="btn-upload-blouses">Compress & Upload Design</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Collection List -->
+        <div class="manager-section">
+          <div class="admin-items-header">
+            <span>Current Blouses Collection</span>
+          </div>
+          <div class="admin-items-grid" id="list-blouses">
+            <!-- Dynamically Rendered -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Panel: Manage Dresses -->
+      <section class="manager-panel" id="dresses-panel">
+        <div class="manager-section">
+          <h2 class="manager-title">Upload New Dress Design</h2>
+          <div class="upload-wrapper">
+            <div class="upload-dropzone" id="dropzone-dresses">
+              <svg xmlns="http://www.w3.org/2000/svg" class="upload-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+              </svg>
+              <div class="upload-text">Drag and drop your design image here</div>
+              <div class="upload-subtext">Supports PNG, JPG, JPEG, WEBP</div>
+              <input type="file" id="file-dresses" class="file-input" accept="image/*">
+              <button class="btn-browse" type="button" onclick="document.getElementById('file-dresses').click()">Browse Files</button>
+            </div>
+            <div class="preview-container">
+              <div class="preview-box" id="preview-box-dresses">
+                <span class="preview-placeholder">Image Preview</span>
+                <img src="" alt="Dress Design Preview" class="preview-img" id="preview-img-dresses">
+              </div>
+              <div class="upload-progress-container" id="progress-container-dresses">
+                <div class="progress-label">
+                  <span>Uploading Image...</span>
+                  <span id="progress-text-dresses">0%</span>
+                </div>
+                <div class="progress-bar-outer">
+                  <div class="progress-bar-inner" id="progress-bar-dresses"></div>
+                </div>
+              </div>
+              <button class="btn-upload" id="btn-upload-dresses">Compress & Upload Design</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="manager-section">
+          <div class="admin-items-header">
+            <span>Current Dresses Collection</span>
+          </div>
+          <div class="admin-items-grid" id="list-dresses">
+            <!-- Dynamically Rendered -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Panel: Manage Gonde -->
+      <section class="manager-panel" id="gonde-panel">
+        <div class="manager-section">
+          <h2 class="manager-title">Upload New Gonde Design</h2>
+          <div class="upload-wrapper">
+            <div class="upload-dropzone" id="dropzone-gonde">
+              <svg xmlns="http://www.w3.org/2000/svg" class="upload-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+              </svg>
+              <div class="upload-text">Drag and drop your design image here</div>
+              <div class="upload-subtext">Supports PNG, JPG, JPEG, WEBP</div>
+              <input type="file" id="file-gonde" class="file-input" accept="image/*">
+              <button class="btn-browse" type="button" onclick="document.getElementById('file-gonde').click()">Browse Files</button>
+            </div>
+            <div class="preview-container">
+              <div class="preview-box" id="preview-box-gonde">
+                <span class="preview-placeholder">Image Preview</span>
+                <img src="" alt="Gonde Design Preview" class="preview-img" id="preview-img-gonde">
+              </div>
+              <div class="upload-progress-container" id="progress-container-gonde">
+                <div class="progress-label">
+                  <span>Uploading Image...</span>
+                  <span id="progress-text-gonde">0%</span>
+                </div>
+                <div class="progress-bar-outer">
+                  <div class="progress-bar-inner" id="progress-bar-gonde"></div>
+                </div>
+              </div>
+              <button class="btn-upload" id="btn-upload-gonde">Compress & Upload Design</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="manager-section">
+          <div class="admin-items-header">
+            <span>Current Gonde Collection</span>
+          </div>
+          <div class="admin-items-grid" id="list-gonde">
+            <!-- Dynamically Rendered -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Panel: Manage Fall Pico -->
+      <section class="manager-panel" id="fallpico-panel">
+        <div class="manager-section">
+          <h2 class="manager-title">Manage Fall Pico Cover Image</h2>
+          <div class="upload-wrapper">
+            <div class="upload-dropzone" id="dropzone-fallpico">
+              <svg xmlns="http://www.w3.org/2000/svg" class="upload-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+              </svg>
+              <div class="upload-text">Drag and drop your Cover Image here</div>
+              <div class="upload-subtext">Uploading will replace the previous cover image</div>
+              <input type="file" id="file-fallpico" class="file-input" accept="image/*">
+              <button class="btn-browse" type="button" onclick="document.getElementById('file-fallpico').click()">Browse Files</button>
+            </div>
+            <div class="preview-container">
+              <div class="preview-box" id="preview-box-fallpico">
+                <span class="preview-placeholder">Image Preview</span>
+                <img src="" alt="Fall Pico Cover Preview" class="preview-img" id="preview-img-fallpico">
+              </div>
+              <div class="upload-progress-container" id="progress-container-fallpico">
+                <div class="progress-label">
+                  <span>Uploading Image...</span>
+                  <span id="progress-text-fallpico">0%</span>
+                </div>
+                <div class="progress-bar-outer">
+                  <div class="progress-bar-inner" id="progress-bar-fallpico"></div>
+                </div>
+              </div>
+              <button class="btn-upload" id="btn-upload-fallpico">Compress & Replace Cover</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="manager-section">
+          <div class="admin-items-header">
+            <span>Active Cover Image</span>
+          </div>
+          <div class="admin-items-grid" id="list-fallpico">
+            <!-- Rendered as a single item with delete button -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Panel: Manage Contact Info -->
+      <section class="manager-panel" id="contact-panel">
+        <div class="manager-section">
+          <h2 class="manager-title">Manage Boutique Contact Details</h2>
+          <form id="contact-form" class="contact-admin-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-input-owner">Boutique Owner / Subtitle</label>
+                <input type="text" id="contact-input-owner" required placeholder="e.g. By First Look Fashion Designer">
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-input-address">Boutique Address</label>
+                <textarea id="contact-input-address" rows="2" required placeholder="Full physical address..."></textarea>
+              </div>
+            </div>
+
+            <div class="form-row split">
+              <div class="form-group">
+                <label for="contact-input-phone">Boutique Phone Number</label>
+                <input type="text" id="contact-input-phone" required placeholder="e.g. +91 98765 43210">
+              </div>
+              <div class="form-group">
+                <label for="contact-input-whatsapp">WhatsApp Number (For instant chat)</label>
+                <input type="text" id="contact-input-whatsapp" required placeholder="e.g. +91 98765 43210">
+              </div>
+            </div>
+
+            <div class="form-row split">
+              <div class="form-group">
+                <label for="contact-input-hours-monsat">Opening Hours (Monday - Saturday)</label>
+                <input type="text" id="contact-input-hours-monsat" required placeholder="e.g. 10:00 AM - 8:00 PM">
+              </div>
+              <div class="form-group">
+                <label for="contact-input-hours-sun">Opening Hours (Sunday)</label>
+                <input type="text" id="contact-input-hours-sun" required placeholder="e.g. Closed or 11:00 AM - 4:00 PM">
+              </div>
+            </div>
+
+            <button type="submit" class="btn-upload visible" id="btn-save-contact" style="margin-top: 15px;">Save Contact Details</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Deletion Confirmation Dialog overlay -->
+  <div class="modal-overlay" id="confirm-modal-overlay">
+    <div class="confirm-modal">
+      <svg xmlns="http://www.w3.org/2000/svg" class="confirm-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+      </svg>
+      <h3 class="confirm-title">Delete Design</h3>
+      <p class="confirm-text">Are you sure you want to permanently remove this design from your boutique collection? This action cannot be undone.</p>
+      <div class="confirm-btns">
+        <button class="btn-cancel" id="btn-confirm-cancel">Cancel</button>
+        <button class="btn-confirm-delete" id="btn-confirm-delete">Confirm Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Overlay -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>

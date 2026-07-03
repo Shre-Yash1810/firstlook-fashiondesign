@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Portal | First Look Fashion Designer</title>
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="login-body">
+
+  <div class="login-card">
+    <img src="assets/images/logo.png" alt="First Look Logo" class="login-logo">
+    <h1 class="login-title">First Look</h1>
+    <h2 class="login-subtitle">Boutique Admin Portal</h2>
+    
+    <!-- Error Alert Banner -->
+    <div class="login-error" id="login-error-alert"></div>
+    
+    <!-- Sign-in Form -->
+    <form id="login-form">
+      <div class="form-group">
+        <input type="email" id="login-email" class="form-input" placeholder=" " required autocomplete="email">
+        <label for="login-email" class="form-label">Email Address</label>
+      </div>
+      
+      <div class="form-group">
+        <input type="password" id="login-password" class="form-input" placeholder=" " required autocomplete="current-password">
+        <label for="login-password" class="form-label">Password</label>
+      </div>
+      
+      <button type="submit" class="btn-login" id="login-btn-text">Sign In</button>
+    </form>
+    
+    <a href="index.html" class="back-to-site">&larr; Back to Main Site</a>
+  </div>
+
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>
