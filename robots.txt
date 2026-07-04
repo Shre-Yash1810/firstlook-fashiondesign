@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+Disallow: /login.html
+Disallow: /js/admin.js
+
+Sitemap: https://firstlookfashions.in/sitemap.xml
